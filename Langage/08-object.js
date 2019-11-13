@@ -54,9 +54,12 @@ delete coords1.y;
 console.log(coords1.x);
 
 // constructor function
-function Coords(x, y) {
+function Coords(x, y, z) {
   this.x = x;
   this.y = y;
+  if (z) {
+    this.z = z;
+  }
 }
 
 Coords.prototype.sumXY = function() { return this.x + this.y; }
@@ -67,6 +70,12 @@ console.log(typeof Coords); // function
 console.log(typeof coordsA); // object
 console.log(coordsA.x); // 1 (dans l'objet)
 console.log(coordsA.sumXY()); // undefined (dans l'objet) -> function (dans le prototype)
+
+console.log(coordsA.x !== undefined); // true;
+console.log(coordsA.hasOwnProperty('x')); // true;
+console.log(coordsA.sumXY !== undefined); // true;
+console.log(coordsA.hasOwnProperty('sumXY')); // false;
+
 console.log(coordsA.sumXY === coordsB.sumXY); // true
 
 

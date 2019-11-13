@@ -8,4 +8,5 @@ try {
 } catch (error) {
   console.log(chalk.red('Test hello Failed'));
   console.log(error);
+  process.exit(1);
 }

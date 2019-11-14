@@ -9,12 +9,12 @@ const contacts = [
   {
     firstName: 'Romain',
     lastName: 'Bohdanowicz',
-    id: getId(),
+    id: 123,
   },
   {
     firstName: 'Jean',
     lastName: 'Dupont',
-    id: getId(),
+    id: 456,
   },
 ];
 

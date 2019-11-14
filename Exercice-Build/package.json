@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "fs-extra": "^8.1.0",
+    "md5": "^2.2.1",
+    "minimist": "^1.2.0",
+    "serve": "^11.2.0",
+    "terser": "^4.4.0"
+  },
+  "scripts": {
+    "serve:dev": "serve src",
+    "serve:prod": "serve dist",
+    "build": "node build.js"
+  },
+  "dependencies": {}
+}

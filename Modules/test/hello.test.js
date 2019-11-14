@@ -1,6 +1,6 @@
 const hello = require('../src/hello'); // fichier du projet (toujours ./ ou ../)
 const assert = require('assert'); // fichier du binaire/node.exe
-const chalk = require('chalk');
+const chalk = require('chalk'); // node_modules/chalk
 
 try {
   assert.equal(hello('Romain'), 'Hello ROMAIN !');

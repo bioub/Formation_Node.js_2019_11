@@ -69,7 +69,7 @@ fs.promises.readFile(editorconfigPath, { encoding: 'utf-8' })
 
 // ES2017 / ES8 async/await
 // en attendant top level await (Stage 3)
-async function copy() {
+(async function () {
   try {
     const content = await fs.promises.readFile(editorconfigPath, { encoding: 'utf-8' });
     await fs.promises.writeFile(editorconfigCopyPath, content);
@@ -77,5 +77,4 @@ async function copy() {
   } catch (err) {
     console.log(err.message);
   }
-}
-copy();
+})();

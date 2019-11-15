@@ -19,7 +19,7 @@ const rs = fs.createReadStream('.editorconfig');
 const ws = fs.createWriteStream('.editorconfig.zip');
 const zip = zlib.createGzip();
 
-// cat .editorconfig | zip > .editorconfig.copy
+// cat .editorconfig | zip > .editorconfig.zip
 rs.pipe(zip).pipe(ws);
 
 const rl = readline.createInterface(rs)

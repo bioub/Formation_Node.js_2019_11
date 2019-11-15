@@ -14,7 +14,7 @@ const contacts = [
   {
     firstName: 'Jean',
     lastName: 'Dupont',
-    id: 456,
+    id: 456
   },
 ];
 
